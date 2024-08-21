@@ -1,6 +1,6 @@
 package javacodes;
 import java.util.Scanner;
-public class questao48AprovacaoFaculdade {
+public class Questao48AprovacaoFaculdade {
 
     public static double presencaFinal(int presenca){
         double perCentagemFinal = 0.0;
