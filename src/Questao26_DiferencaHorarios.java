@@ -15,11 +15,7 @@ public class Questao26_DiferencaHorarios {
 
         int diferencaSegundos = Math.abs(segundos1 - segundos2);
 
-        int horas = diferencaSegundos / 3600;
-        int minutos = (diferencaSegundos % 3600) / 60;
-        int segundos = diferencaSegundos % 60;
-
-        System.out.printf("A diferença entre os horários é: %02d:%02d:%02d%n", horas, minutos, segundos);
+        System.out.printf("A diferença entre os horários é: %d segundos%n", diferencaSegundos);
     }
 
     private static int converterParaSegundos(String horario) {
