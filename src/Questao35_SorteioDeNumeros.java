@@ -46,17 +46,18 @@ public class Questao35_SorteioDeNumeros {
             }
         }
 
-        Set<Integer> numerosSorteados = new HashSet<>();
+        List<Integer> numerosSorteados = new ArrayList<>();
 
         while (numerosSorteados.size() < quantidade) {
             int numero = random.nextInt(faixaMax - faixaMin + 1) + faixaMin;
-            numerosSorteados.add(numero);
+            if (!numerosSorteados.contains(numero)) {
+                numerosSorteados.add(numero);
+            }
         }
 
         System.out.println("Números sorteados: ");
-        Iterator<Integer> iterator = numerosSorteados.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+        for (int numero : numerosSorteados) {
+            System.out.println(numero);
         }
 
         scanner.close();

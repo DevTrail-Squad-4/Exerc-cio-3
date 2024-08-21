@@ -4,11 +4,22 @@ public class Questao01_CalculaIdade {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite seu ano de nascimento: ");
-        int anoNascimento = scanner.nextInt();
+        int anoNascimento;
+        int anoAtual;
 
-        System.out.print("Digite o ano atual: ");
-        int anoAtual = scanner.nextInt();
+        while (true) {
+            System.out.print("Digite seu ano de nascimento: ");
+            anoNascimento = scanner.nextInt();
+
+            System.out.print("Digite o ano atual: ");
+            anoAtual = scanner.nextInt();
+
+            if (anoNascimento > anoAtual) {
+                System.out.println("Erro: O ano de nascimento não pode ser maior que o ano atual. Tente novamente.");
+            } else {
+                break;
+            }
+        }
 
         int idade = anoAtual - anoNascimento;
 

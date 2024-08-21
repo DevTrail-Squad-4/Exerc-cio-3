@@ -12,7 +12,7 @@ public class Questao34_SorteioDeNumero {
         for (int i = 0; i < quantidadeDeNumeros; i++) {
 
             int numeroSorteado = random.nextInt(limiteSuperior - limiteInferior + 1) + limiteInferior;
-            System.out.println(i + 1 + " : " + numeroSorteado);
+            System.out.println("Número " + (i + 1 ) + ": " + numeroSorteado);
         }
     }
 }
