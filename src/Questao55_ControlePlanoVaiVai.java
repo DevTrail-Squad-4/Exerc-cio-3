@@ -11,7 +11,8 @@ public class Questao55_ControlePlanoVaiVai {
         double custoExcedenteVaiVai = 0.20;
         double custoTelefoneFixo = 0.325;
         double saldo = valorMensal;
-        int minutosRestantes = minutosIncluidos + minutosVaiVai;
+        int minutosRestantesOutrasOperadoras = minutosIncluidos;
+        int minutosRestantesVaiVai = minutosVaiVai;
 
         while (true) {
             System.out.println("Digite o tipo de ligação ('o' para outras operadoras, 'v' para a própria Vai-Vai, 'f' para telefone fixo): ");
@@ -28,27 +29,32 @@ public class Questao55_ControlePlanoVaiVai {
 
             switch (tipoLigacao) {
                 case 'o':
-                    if (minutos > minutosRestantes) {
-                        valorAPagar = (minutos - minutosRestantes) * custoExcedenteOutrasOperadoras;
-                        minutosRestantes = 0;
+                    if (minutos > minutosRestantesOutrasOperadoras) {
+                        valorAPagar = (minutos - minutosRestantesOutrasOperadoras) * custoExcedenteOutrasOperadoras;
+                        minutosRestantesOutrasOperadoras = 0;
                     } else {
-                        minutosRestantes -= minutos;
+                        minutosRestantesOutrasOperadoras -= minutos;
                     }
                     break;
                 case 'v':
-                    if (minutos > minutosRestantes) {
-                        valorAPagar = (minutos - minutosRestantes) * custoExcedenteVaiVai;
-                        minutosRestantes = 0;
+                    if (minutos > minutosRestantesVaiVai + minutosRestantesOutrasOperadoras) {
+                        valorAPagar = (minutos - (minutosRestantesVaiVai + minutosRestantesOutrasOperadoras)) * custoExcedenteVaiVai;
+                        minutosRestantesVaiVai = 0;
+                        minutosRestantesOutrasOperadoras = 0;
+                    } else if (minutos > minutosRestantesVaiVai) {
+                        minutos -= minutosRestantesVaiVai;
+                        minutosRestantesVaiVai = 0;
+                        minutosRestantesOutrasOperadoras -= minutos;
                     } else {
-                        minutosRestantes -= minutos;
+                        minutosRestantesVaiVai -= minutos;
                     }
                     break;
                 case 'f':
-                    if (minutos > minutosRestantes) {
-                        valorAPagar = ((minutos - minutosRestantes) * custoTelefoneFixo) / 2;
-                        minutosRestantes = 0;
+                    if (minutos > minutosRestantesOutrasOperadoras) {
+                        valorAPagar = ((minutos - minutosRestantesOutrasOperadoras) * custoTelefoneFixo) / 2;
+                        minutosRestantesOutrasOperadoras = 0;
                     } else {
-                        minutosRestantes -= minutos;
+                        minutosRestantesOutrasOperadoras -= minutos;
                     }
                     break;
                 default:
