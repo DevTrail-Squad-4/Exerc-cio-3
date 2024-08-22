@@ -77,7 +77,7 @@ public class Questao21_Emprestimo {
     }
 
     public static void main(String[] args) throws Exception {
-        Questao21 app = new Questao21();
+        Questao21_Emprestimo app = new Questao21_Emprestimo();
         app.new Emprestimo().Emprestimo();
     }
 }

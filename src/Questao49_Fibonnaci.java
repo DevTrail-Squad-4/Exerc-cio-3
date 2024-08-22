@@ -26,7 +26,7 @@ public class Questao49_Fibonnaci {
     }
 
     public static void main(String[] args) throws Exception {
-        Questao49 app = new Questao49();
+        Questao49_Fibonnaci app = new Questao49_Fibonnaci();
         app.new Fibonnaci();
 
     }

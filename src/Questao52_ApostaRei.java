@@ -31,7 +31,7 @@ public class Questao52_ApostaRei {
         }
     }
     public static void main(String[] args) throws Exception {
-        Questao52 app = new Questao52();
+        Questao52_ApostaRei app = new Questao52_ApostaRei();
         app.new ApostaRei();
 
     }

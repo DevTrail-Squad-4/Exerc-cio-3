@@ -20,7 +20,7 @@ public class Questao61_PiramedeAsterico {
         }
     }
     public static void main(String[] args) throws Exception {
-        Questao61 app = new Questao61();
+        Questao61_PiramedeAsterico app = new Questao61_PiramedeAsterico();
         app.new PiramedeAsterisco();
 
     

@@ -33,7 +33,7 @@ public class Questao51_Tribonnaci {
     }
 
     public static void main(String[] args) throws Exception {
-        Questao51 app = new Questao51();
+        Questao51_Tribonnaci app = new Questao51_Tribonnaci();
         app.new Tribonnaci();
 
     }

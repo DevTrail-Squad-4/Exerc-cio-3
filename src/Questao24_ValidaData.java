@@ -134,7 +134,7 @@ public class Questao24_ValidaData {
 
     
     public static void main(String[] args) throws Exception {
-        Questao24 app = new Questao24();
+        Questao24_ValidaData app = new Questao24_ValidaData();
         app.new ValidaData();
 
     }

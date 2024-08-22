@@ -16,7 +16,7 @@ public class Questao6_Area {
         }
     }
     public static void main(String[] args) throws Exception {
-        Questao6 app = new Questao6();
+        Questao6_Area app = new Questao6_Area();
         Area area = app.new Area();
     }
 }

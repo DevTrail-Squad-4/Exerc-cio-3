@@ -28,7 +28,7 @@ public class Questao50_FibonnaciPosicao {
     }
 
     public static void main(String[] args) throws Exception {
-        Questao50 app = new Questao50();
+        Questao50_FibonnaciPosicao app = new Questao50_FibonnaciPosicao();
         app.new FibonnaciPosicao();
 
     }
