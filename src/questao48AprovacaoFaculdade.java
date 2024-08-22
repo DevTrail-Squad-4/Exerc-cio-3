@@ -1,4 +1,3 @@
-package javacodes;
 import java.util.Scanner;
 public class questao48AprovacaoFaculdade {
 

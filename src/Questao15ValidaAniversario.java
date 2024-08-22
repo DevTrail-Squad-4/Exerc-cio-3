@@ -23,7 +23,7 @@ public class Questao15ValidaAniversario {
             System.out.println("Data Inválida!");
         }else if(mesNascimento > 12 || mesNascimento<1){
             System.out.println("Data Inválida!");
-        }else if (mesNascimento == 4 || mesNascimento == 6 || mesNascimento == 9 || mesNascimento == 11 && diaNascimento > 30) {
+        }else if ((mesNascimento == 4 || mesNascimento == 6 || mesNascimento == 9 || mesNascimento == 11) && diaNascimento > 30) {
             System.out.println("Data Inválida!");
         }else if(mesNascimento == 2 && diaNascimento > 28){
             System.out.println("Data Inválida!");

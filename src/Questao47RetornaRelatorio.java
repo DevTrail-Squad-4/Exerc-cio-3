@@ -1,4 +1,3 @@
-package javacodes;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
@@ -90,7 +89,7 @@ class Paciente{
     }
 
     public String nomeMulherMaisBaixa(List<Paciente> pacientes){
-        double alturaBase = 2.0;
+        double alturaBase = 3.0;
         String nomeMaisBaixa = "";
 
         for (Paciente p : pacientes){

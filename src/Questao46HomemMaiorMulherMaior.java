@@ -20,7 +20,7 @@ public class Questao46HomemMaiorMulherMaior{
         int homemMaiorIdade = 0;
         int mulherMaiorIdade = 0;
 
-        for(int i=0; i<100; i++){
+        for(int i=0; i<200; i++){
             String sexo = (i%2 == 0)? "masculino" : "feminino";
             int idade = (int)(Math.random() * 90);
             pessoas.add(new Pessoa(sexo, idade));
