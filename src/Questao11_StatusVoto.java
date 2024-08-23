@@ -1,6 +1,6 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+//obs: provavelmente houve um equivoco no comando: (idade menor ou igual a 16, ou maior ou igual a 65)
 public class Questao11_StatusVoto {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
