@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Questao18AniversarioCompletoMAisIdade {
+public class Questao18_AniversarioCompletoMAisIdade {
 
     public static String saberSigno(int mesNascimento, int diaNascimento){
 

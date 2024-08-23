@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Questao16ValidaAniversarioETrimestre {
+public class Questao16_ValidaAniversarioETrimestre {
 
     public static void main(String[] args){
     Scanner scanner = new Scanner(System.in);

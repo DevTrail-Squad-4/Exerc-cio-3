@@ -2,7 +2,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Questao17ValidaAniversarioTrimestreESigno {
+public class Questao17_ValidaAniversarioTrimestreESigno {
 
     public static String saberSigno(int mesNascimento, int diaNascimento){
 
