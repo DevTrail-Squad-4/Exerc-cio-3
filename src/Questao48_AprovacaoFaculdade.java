@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Questao48AprovacaoFaculdade {
+public class Questao48_AprovacaoFaculdade {
 
     public static double presencaFinal(int presenca){
         double perCentagemFinal = 0.0;

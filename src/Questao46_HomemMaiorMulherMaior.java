@@ -14,7 +14,7 @@ class Pessoa{
 
 }
 
-public class Questao46HomemMaiorMulherMaior{
+public class Questao46_HomemMaiorMulherMaior{
     public static void main(String[] args) {
         List<Pessoa> pessoas = new ArrayList<>();
         int homemMaiorIdade = 0;

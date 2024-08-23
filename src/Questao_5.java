@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Questao5{
+public class Questao_5{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double divida,juros, taxaJuros, dividaComJuros, valorFinalDivida;

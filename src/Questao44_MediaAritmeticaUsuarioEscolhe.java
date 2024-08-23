@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 
-public class Questao44MediaAritmeticaUsuarioEscolhe{
+public class Questao44_MediaAritmeticaUsuarioEscolhe{
 
     
 
