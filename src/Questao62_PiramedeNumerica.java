@@ -32,7 +32,7 @@ public class Questao62_PiramedeNumerica {
         }
     }
     public static void main(String[] args) throws Exception {
-        Questao62 app = new Questao62();
+        Questao62_PiramedeNumerica app = new Questao62_PiramedeNumerica();
         app.new PiramedeNumerica();
 
     

@@ -18,7 +18,7 @@ public class Questao53_Tabuada {
             }
         }
     public static void main(String[] args) throws Exception {
-        Questao53 app = new Questao53();
+        Questao53_Tabuada app = new Questao53_Tabuada();
         app.new Tabuada();
 
     }

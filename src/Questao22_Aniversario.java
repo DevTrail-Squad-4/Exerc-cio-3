@@ -37,7 +37,7 @@ public class Questao22_Aniversario {
     
     public static void main(String[] args) throws Exception {
 
-        Questao22 app = new Questao22();
+        Questao22_Aniversario app = new Questao22_Aniversario();
         app.new Aniversario();
     }
 }

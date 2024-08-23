@@ -80,7 +80,7 @@ public class Questao23_MaisVelho {
     }   
 
     public static void main(String[] args){ 
-        Questao23 app = new Questao23();
+        Questao23_MaisVelho app = new Questao23_MaisVelho();
         app.new MaisVelho();
 
     }

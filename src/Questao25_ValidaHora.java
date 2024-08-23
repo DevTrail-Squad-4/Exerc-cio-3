@@ -43,7 +43,7 @@ public class Questao25_ValidaHora {
     }
 
     public static void main(String[] args) throws Exception {
-        Questao25 app = new Questao25();
+        Questao25_ValidaHora app = new Questao25_ValidaHora();
         app.new ValidaHora();
 
     }
