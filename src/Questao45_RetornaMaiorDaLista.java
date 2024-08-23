@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 
-public class Questao45RetornaMaiorDaLista {
+public class Questao45_RetornaMaiorDaLista {
 
     public static boolean eIgual(ArrayList<Double> lista){
         double verificador = lista.get(0);

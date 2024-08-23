@@ -181,7 +181,7 @@ class Paciente{
 }
 
 
-public class Questao47RetornaRelatorio {
+public class Questao47_RetornaRelatorio {
 
     public static void main(String[] args) {
         String primeiroOuProximo = "primeiro", mensagemUltimo = "";

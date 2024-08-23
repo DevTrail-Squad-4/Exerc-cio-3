@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 
-public class Questao43MediaAritmetica500 {
+public class Questao43_MediaAritmetica500 {
 
     
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Questao61LinhasAsteriscos {
+public class Questao61_LinhasAsteriscos {
 
 
     public static void main(String[] args) {
