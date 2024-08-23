@@ -3,47 +3,26 @@ import java.util.Scanner;
 
 public class Questao36_NumerosImparesNoIntervalo {
     public static void main(String[] args) {
+        // Criar um scanner para ler a entrada do usuário
         Scanner scanner = new Scanner(System.in);
 
-        int inicio = 0;
-        int fim = 0;
+        System.out.print("Digite o primeiro número: ");
+        int inicio = scanner.nextInt();
 
-        while (true) {
-            try {
-                System.out.print("Digite o início do intervalo: ");
-                inicio = scanner.nextInt();
-                break;
-            } catch (InputMismatchException e) {
-                System.out.println("Entrada inválida. Digite um número inteiro.");
-                scanner.next();
-            }
-        }
-
-        while (true) {
-            try {
-                System.out.print("Digite o fim do intervalo: ");
-                fim = scanner.nextInt();
-                break;
-            } catch (InputMismatchException e) {
-                System.out.println("Entrada inválida. Digite um número inteiro.");
-                scanner.next();
-            }
-        }
-
-        if (inicio > fim) {
-            int temp = inicio;
-            inicio = fim;
-            fim = temp;
-        }
-
-        System.out.println("Números ímpares no intervalo:");
-
-        for (int i = inicio; i <= fim; i++) {
-            if (i % 2 != 0) {
-                System.out.println(i);
-            }
-        }
+        System.out.print("Digite o segundo número: ");
+        int fim = scanner.nextInt();
 
         scanner.close();
+
+        if (inicio > fim) {
+            System.out.println("O número inicial deve ser menor ou igual ao número final.");
+            return;
+        }
+
+        int primeiroImpar = (inicio % 2 == 0) ? inicio + 1 : inicio;
+
+        for (int i = primeiroImpar; i <= fim; i += 2) {
+            System.out.println(i);
+        }
     }
 }
