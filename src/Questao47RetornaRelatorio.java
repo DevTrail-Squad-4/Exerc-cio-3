@@ -214,11 +214,16 @@ public class Questao47RetornaRelatorio {
             nomePaciente = paciente.getNome();
             nomeParaFinalizarLoop = nomePaciente.substring(nomePaciente.length() -3);
             if(nomeParaFinalizarLoop.equalsIgnoreCase("fim")){
+                
+                String nomeUltimo = pacientes.get(pacientes.size() - 1).getNome();
+                pacientes.get(pacientes.size() - 1).setNome(nomeUltimo.substring(0, (nomeUltimo.length() - 3)));
                 break;
             }
 
 
         }
+
+
 
         Paciente p = new Paciente();
         System.out.println("\nRelatório de Pacientes:");
@@ -228,7 +233,7 @@ public class Questao47RetornaRelatorio {
         System.out.println("Quantidade de pessoas com idade entre 18 e 25 anos: " + p.pessoasEntre18e25(pacientes));
         System.out.println("Nome do paciente mais velho: " + p.nomePessoaMaisVelha(pacientes));
         System.out.println("Nome da mulher mais baixa: " + p.nomeMulherMaisBaixa(pacientes));
-        System.out.println("Quantidade de homens com mais de 1,60 e maiores de idade" + p.homemMaior160MaiorIdade(pacientes));
+        System.out.println("Quantidade de homens com mais de 1,60 e maiores de idade: " + p.homemMaior160MaiorIdade(pacientes));
         //Minha situação criada é saber quantos homens sao maiores de idade e mais altos que 1.60
         scanner.close();
 
